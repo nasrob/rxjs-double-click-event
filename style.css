@@ -3,3 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    background-color: darkseagreen;
+    height: 100vh;
+    text-align: center;
+    padding: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.message {
+    height: 50vh;
+    width: 60vh;
+    margin: 0 auto;
+    padding: 3em;
+    border: 15px solid rebeccapurple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 3em;
+}
+
+/* p {
+    font-family: ;
+} */
