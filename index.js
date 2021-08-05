@@ -18,3 +18,14 @@ clicks$
 		console.log("Double Click");
 		messageDiv.appendChild(messageP);
 	});
+
+let notif;
+
+if (window.Notification && Notification.permission !== "denied") {
+	Notification.requestPermission((status) => {
+		notif = new Notification("Hey", {
+			body: "You must click twice",
+		});
+		setTimeout(notif.close(), 1000);
+	});
+}
